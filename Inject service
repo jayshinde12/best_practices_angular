@@ -1,0 +1,21 @@
+
+// use this code to inject service in component in place of injecting through constructor
+@Component({
+  selector:"app-root",
+  template:<p>{{userService}}</p>
+})
+
+export class AppComponent{
+    userService=inject(UserService)
+}
+
+//------------dont use-------------//
+
+@Component({
+  selector:"app-root",
+  template:<p>{{userService}}</p>
+})
+
+export class AppComponent{
+   constructor(public userService:UserService)
+}
