@@ -19,3 +19,6 @@ export class AppComponent{
 export class AppComponent{
    constructor(public userService:UserService)
 }
+
+
+Angular 14 gave us the ability to use the inject() function more generally in our projects, including replacing constructor based dependency injection
